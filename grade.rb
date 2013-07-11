@@ -5,8 +5,18 @@
 #  20 - 40   => 'd'
 #  0  - 20   => 'e'
 def grade(mark)
-	## TODO write your code here. You might have to use multiple 
-	# if statements inside each other	
+    # Assume I will be given marks in the range 0 - 100
+    if mark >= 80
+        grade = 'a' 
+    elsif mark >= 60
+        grade = 'b'
+    elsif mark >= 40
+        grade = 'c'
+    elsif mark >=20
+        grade = 'd'
+    else
+        grade = 'e'
+    end
 
 	return grade
 end

@@ -17,14 +17,14 @@ end
 #   hello("dave") #=> "Hello dave"
 #
 def hello(name)
-	return 'Hello #{name}'
+	return "Hello #{name}" # <--- need " " , not ' '
 end # <---- the end was misspelt
 
 
 
-# Evaluates the function f(x) = (2 + 5x - x**2)/5
+# Evaluates the mathmatical function f(x) = (2 + 5x - x**2)/5
 def f(x) # <---- there shouldn't have been a :
-	return (2 + 5*x - x**2)/5.0   
+	return (2 + 5*x - x**2)/5.0   # <-- careful of integer division!
 end
 
 
@@ -33,7 +33,7 @@ end
 # 	insult('goose', 5) # => "Goose off!!!!!"
 #
 def insult(word, strength) # <---- it's def, not define
-	return "#{word} off" + '!' * strength
+	return "#{word.capitalize} off" + '!' * strength
 end
 
 
